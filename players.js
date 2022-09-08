@@ -8,7 +8,7 @@ var player_manager = {
 			cash: 12,
 			athletes: [],
 			score: 0,
-			human: false
+			human: false,
 		};
 		players.push(player);
 	},

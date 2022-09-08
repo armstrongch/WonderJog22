@@ -5,7 +5,11 @@ var athlete_manager = {
 	{
 		var athlete = {
 			name: name,
-			desc: desc
+			desc: desc,
+			get_text: function()
+			{
+				return this.name + ": " + this.desc;
+			}
 		};
 		athletes.push(athlete);
 	},
