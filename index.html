@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+		<meta name="author" content="Chris Turd Boomerang Armstrong" />
+		<title>Wonder Jog 2022</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body onload="game_state_manager.setup()">
+		<div id='TITLE_DIV'>
+			<p>Welcome to: Wonder Jog 2022</p>
+			<p>A Game by Chris 'Turd Boomerang' Armstrong</p>
+			<p><a onclick='game_state_manager.change_state(game_states.DRAFT)'>Begin</a><p/>
+		</div>
+		<div id='DRAFT_DIV'>
+		</div>
+		<script src="jquery.min.js" type="text/javascript"></script>
+		<script src="game_state.js"></script>
+		<script src="athletes.js"></script>
+		<script src="players.js"></script>
+		<script src="utility.js"></script>
+		<script src="draft.js"></script>
+	</body>
+</html>

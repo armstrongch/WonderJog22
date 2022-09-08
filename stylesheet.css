@@ -1,0 +1,8 @@
+body {
+	font-size: large;
+}
+
+a {
+    cursor: pointer;
+	text-decoration: underline;
+}
