@@ -33,7 +33,7 @@ var draft_manager = {
 			new_html += `<li>`;
 			if (affordable)
 			{
-				new_html += `${<a onclick='draft_manager.draft_athlete(0, ${i})'>}`
+				new_html += `<a onclick='draft_manager.draft_athlete(0, ${i})'>`
 			}
 			new_html += `${this.available_athletes[i].get_text()} Costs $${4-i}`;
 			if (affordable) { new_html += `</a>`; }
