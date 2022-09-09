@@ -6,8 +6,3 @@ a {
     cursor: pointer;
 	text-decoration: underline;
 }
-
-td {
-	padding-left: 5px;
-	border-left: 1px solid black;
-}

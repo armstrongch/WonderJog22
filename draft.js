@@ -46,27 +46,21 @@ var draft_manager = {
 		{
 			new_html += `<p><a onclick='draft_manager.new_draft_round()'>Draft None (Pass)</a></p>`;
 		}
-		new_html += `
-			<table>
-				<tr>
-					<td>
-						<p>Your Team</p>
-						<ul>`
+		new_html += `<p>Your Team</p><ul>`
 		for (let i = 0; i < players[0].athletes.length; i += 1)
 		{
 			new_html += `<li>${players[0].athletes[i].get_text()}</li>`;
 		}
-		new_html += `</ul></td>`;
+		new_html += `</ul>`;
 		for (let i = 1; i < players.length; i += 1)
 		{
-			new_html += `<td><p>Enemy Team ${i}</p><ul>`;
+			new_html += `<p>Enemy Team ${i}</p><ul>`;
 			for (let j = 0; j < players[i].athletes.length; j += 1)
 			{
 				new_html += `<li>${players[i].athletes[j].get_text()}</li>`;
 			}
-			new_html += `</ul></td>`;
+			new_html += `</ul>`;
 		}
-		new_html += `</table>`;
 		$('#DRAFT_DIV').html(new_html);
 	}
 };
