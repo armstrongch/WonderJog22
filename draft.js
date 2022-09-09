@@ -16,6 +16,11 @@ var draft_manager = {
 		players[player_index].athletes.push(athlete);
 		this.available_athletes.splice(athlete_index, 1);
 		players[player_index].cash -= (4-athlete_index);
+		this.perform_cpu_draft();
+	},
+	perform_cpu_draft: function()
+	{
+		//draft cpu athletes
 		this.new_draft_round();
 	},
 	draw: function()
@@ -44,7 +49,7 @@ var draft_manager = {
 			<p>`;
 		if (this.available_athletes.length < 5)
 		{
-			new_html += `<p><a onclick='draft_manager.new_draft_round()'>Draft None (Pass)</a></p>`;
+			new_html += `<p><a onclick='draft_manager.perform_cpu_draft()'>Draft None (Pass)</a></p>`;
 		}
 		new_html += `<p>Your Team</p><ul>`
 		for (let i = 0; i < players[0].athletes.length; i += 1)
